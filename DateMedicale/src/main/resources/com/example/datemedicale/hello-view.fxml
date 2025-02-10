@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.datemedicale.HelloController" spacing="10" alignment="CENTER">
+
+    <Label fx:id="welcomeText" text="Welcome to JavaFX Application!"/>
+
+    <!-- Buton pentru afișarea tuturor datelor -->
+    <Button text="Show All Data" onAction="#showAllData"/>
+
+    <!-- Pentru a verifica starea de sănătate -->
+    <Button text="Check Health" onAction="#checkHealth"/>
+
+    <!-- Câmpuri pentru introducerea datelor utilizatorului -->
+    <TextField fx:id="inputType" promptText="Enter type (BMI or BP)"/>
+    <TextField fx:id="inputValue" promptText="Enter value (e.g. 25.5 or 120/80)"/>
+    <Button text="Add Data" onAction="#addUserData"/>
+
+    <!-- Salvarea datelor în fișier -->
+    <TextField fx:id="inputDate" promptText="Enter date (yyyy-MM-dd)"/>
+    <Button text="Save Data to File" onAction="#saveDataToFile"/>
+
+    <!-- Zonă pentru afișarea rezultatelor -->
+    <TextArea fx:id="dataDisplay" prefHeight="200" prefWidth="300" wrapText="true"/>
+</VBox>
